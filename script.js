@@ -18,47 +18,74 @@ const CONFIG = {
   fromName: "" // put your name here if you want it under the letter
 };
 
-// Put your photos in the "images" folder and list them here.
-// Any photo that is missing is simply skipped.
-const PHOTOS = [
-  { src: "images/photo1.jpg", caption: "Where it all began" },
-  { src: "images/photo2.jpg", caption: "My favorite smile" },
-  { src: "images/photo3.jpg", caption: "Us, being us" },
-  { src: "images/photo4.jpg", caption: "Just another perfect day" },
-  { src: "images/photo5.jpg", caption: "You, always you" },
-  { src: "images/photo6.jpg", caption: "Home is wherever you are" },
-  { src: "images/photo7.jpg", caption: "My heart, in one picture" },
-  { src: "images/photo8.jpg", caption: "And many more to come" }
+// Photos AND videos: put the files in the "images" folder and list them here.
+//   caption = the short title under the picture
+//   message = your personal note, shown when she taps the photo/video
+// Videos are detected by the file ending (.mp4, .webm, .mov, .m4v).
+// Any file that is missing is simply skipped, so you can list more than you upload.
+const MEMORIES = [
+  { src: "images/photo1.jpg", caption: "Where it all began \u{1F972}",
+    message: "The day everything started to make sense. I didn't know it yet, but you were already my whole world. \u{1F979}" },
+  { src: "images/photo2.jpg", caption: "My favorite smile \u{1F60D}",
+    message: "This smile fixes my worst days. I'd do anything to keep it on your face. \u{1F496}" },
+  { src: "images/photo3.jpg", caption: "Us, being us \u{1F495}",
+    message: "No filters, no acting, just us. This is my favorite version of life. \u{1F970}" },
+  { src: "images/photo4.jpg", caption: "Just another perfect day ✨",
+    message: "Any day is perfect when you're in it. Even the boring ones. \u{1F90D}" },
+  { src: "images/video1.mp4", caption: "Our little movie \u{1F3AC}",
+    message: "Press play and fall in love with us all over again. \u{1F49E}" },
+  { src: "images/photo5.jpg", caption: "You, always you \u{1F339}",
+    message: "I could look at this picture all day and still not get enough of you. \u{1F60D}" },
+  { src: "images/photo6.jpg", caption: "Home is wherever you are \u{1F3E1}",
+    message: "I finally understood what 'home' means when I met you. \u{1F90D}" },
+  { src: "images/video2.mp4", caption: "Replay this one \u{1F3A5}",
+    message: "Some moments deserve to be watched again and again. This is one of them. \u{1F970}" },
+  { src: "images/photo7.jpg", caption: "My heart, in one picture \u{1F496}",
+    message: "If you ever wonder where my heart is, it's right here, with you. \u{1F497}" },
+  { src: "images/photo8.jpg", caption: "And many more to come \u{1F970}",
+    message: "This is only the beginning. I have so many more memories I want to make with you. \u{1F496}" }
 ];
 
+// [emoji, title, text on the back of the card]
 const REASONS = [
-  ["You're always on my side", "Right or wrong, win or lose, I never have to wonder where you stand."],
-  ["You never nag", "You give me space and trust, and somehow that makes me want to be better."],
-  ["No drama. Ever.", "With you, disagreements end in understanding. The peace lives where you are."],
-  ["Your big heart", "You give so generously and never keep score."],
-  ["Your tenderness", "The way you care is quiet and constant, and it reaches me every single time."],
-  ["Your steadiness", "In a noisy world you stay calm and strong, and I lean on that more than you know."],
-  ["You understand me", "Half the time you get what I mean before I even find the words."],
-  ["Only you", "Out of everyone in the world, I would choose you again. And again."]
+  ["\u{1FAF6}", "You're always on my side", "Right or wrong, win or lose, I never have to wonder where you stand. You're my person. \u{1F90D}"],
+  ["\u{1F54A}️", "You never nag", "You give me space and trust, and somehow that makes me want to be better for you. \u{1F970}"],
+  ["☁️", "No drama. Ever.", "With you, everything ends in understanding. The peace lives where you are. \u{1F49E}"],
+  ["\u{1F496}", "Your big heart", "You give so generously and never keep score. I'm so lucky I get to be loved by you. \u{1F979}"],
+  ["\u{1F338}", "Your tenderness", "The way you care is quiet and constant, and it reaches me every single time. \u{1F90D}"],
+  ["\u{1F9F8}", "Your steadiness", "In a noisy world you stay calm and strong, and I lean on that more than you know. \u{1F917}"],
+  ["\u{1F52E}", "You understand me", "Half the time you get what I mean before I even find the words. How do you do that? \u{1F97A}"],
+  ["\u{1F512}", "Only you", "Out of everyone in the whole world, I'd choose you again. And again. And again. \u{1F498}"]
 ];
 
 const LETTER = [
-  "My Mokmok,",
+  "My Mokmok \u{1F90D}\u{1F339}",
   "",
-  "Happy birthday, my love. Twenty-eight looks beautiful on you, but honestly, everything does.",
+  "Happy birthday, my love! \u{1F382}✨",
   "",
-  "I never know how to say this the way it lives inside me, so I'll say it plainly: I love every single thing about you. Your big heart, your tenderness, your steadiness, the way you understand me even when I don't explain myself.",
+  "Today is YOUR day, and honestly it's my favorite day of the whole year, because it's the day the world got you. \u{1F979}",
   "",
-  "You are always on my side. Always. You never nag, you never start fights, you never make me feel like I have to earn peace, because you are the peace. Do you know how rare that is? I do, and I never take it for granted, not for a single day.",
+  "I tried so hard to find the perfect words for this letter, and I couldn't, because no words are big enough. So I'll just tell you the truth, straight from my heart:",
   "",
-  "Since December 5th my days have a different shape. The ordinary ones became my favorites, just because you're in them.",
+  "I love you. \u{1F496} I love every little thing about you.",
+  "I love how big your heart is, how gentle you are, and how steady you stay when everything around us gets loud. \u{1F90D}",
+  "I love that you understand me even when I say nothing at all. \u{1F97A}",
   "",
-  "And I mean this with my whole heart: I don't want anyone else in this world. Not a different life, not a different version of this story. Just you. Every morning, every storm, every boring Tuesday.",
+  "You are always on my side. Always. \u{1FAF6}",
+  "You never nag, you never pick fights, you never make me feel small. You are my peace, my calm, my safe place. \u{1F3E1}\u{1F497}",
+  "Do you know how rare you are? I do. And I never take it for granted, not for a single day.",
   "",
-  "So here's my promise on your birthday: I will keep choosing you, keep showing up, and keep trying to deserve the way you love me.",
+  "Ever since December 5th, even my most ordinary days turned into my favorites, just because you're in them. \u{1F319}☀️",
   "",
-  "Happy birthday, Monica. Thank you for being mine."
+  "And I want you to hear this clearly: I don't want anyone else in this world. Not now, not ever. \u{1F512}",
+  "It's you. It has always been you. Every morning, every storm, every boring Tuesday, I choose you. \u{1F49E}",
+  "",
+  "My promise to you on your birthday: I'll keep choosing you, keep showing up, and keep trying to deserve the way you love me. \u{1F339}",
+  "",
+  "Happy birthday, my Mokmok. Thank you for being mine. \u{1F90D}\u{1F382}"
 ].join("\n");
+
+const WISH_TEXT = "Whatever you wished for, I'll do everything I can to make it come true. And me? I wished for you. Again. \u{1F970}";
 
 /* =========================================================
    Code below: no need to touch
@@ -90,6 +117,7 @@ async function sha256(text) {
 }
 
 /* ---------- floating hearts ---------- */
+const FLOATERS = ["♥", "\u{1F496}", "\u{1F497}", "✨", "\u{1F339}", "\u{1F495}", "\u{1F338}", "\u{1F90D}"];
 let heartsTimer = null;
 function startHearts() {
   if (heartsTimer) return;
@@ -98,14 +126,49 @@ function startHearts() {
     if (document.hidden) return;
     const h = document.createElement("span");
     h.className = "fheart";
-    h.textContent = Math.random() > 0.3 ? "♥" : "❤";
+    h.textContent = FLOATERS[Math.floor(Math.random() * FLOATERS.length)];
     h.style.left = Math.random() * 100 + "%";
-    h.style.fontSize = 12 + Math.random() * 20 + "px";
-    const dur = 9 + Math.random() * 9;
+    h.style.fontSize = 14 + Math.random() * 22 + "px";
+    const dur = 8 + Math.random() * 8;
     h.style.animationDuration = dur + "s";
     layer.appendChild(h);
     setTimeout(() => h.remove(), dur * 1000 + 200);
-  }, 1100);
+  }, 800);
+}
+
+/* ---------- bursts and confetti ---------- */
+function burstAt(x, y, n, spread) {
+  const icons = ["❤️", "\u{1F496}", "\u{1F497}", "\u{1F495}", "✨"];
+  for (let i = 0; i < n; i++) {
+    const h = document.createElement("span");
+    h.className = "burst";
+    h.textContent = icons[Math.floor(Math.random() * icons.length)];
+    h.style.left = x + "px";
+    h.style.top = y + "px";
+    h.style.fontSize = 14 + Math.random() * 20 + "px";
+    const a = Math.random() * Math.PI * 2;
+    const d = spread * (0.45 + Math.random() * 0.55);
+    h.style.setProperty("--x", Math.cos(a) * d + "px");
+    h.style.setProperty("--y", Math.sin(a) * d + "px");
+    document.body.appendChild(h);
+    setTimeout(() => h.remove(), 1600);
+  }
+}
+
+function confetti(n) {
+  const pieces = ["\u{1F389}", "✨", "\u{1F496}", "\u{1F339}", "\u{1F388}", "\u{1F497}", "⭐", "\u{1F38A}"];
+  for (let i = 0; i < n; i++) {
+    const c = document.createElement("span");
+    c.className = "confetti";
+    c.textContent = pieces[Math.floor(Math.random() * pieces.length)];
+    c.style.left = Math.random() * 100 + "vw";
+    c.style.fontSize = 14 + Math.random() * 20 + "px";
+    const dur = 2.8 + Math.random() * 2.5;
+    c.style.animationDuration = dur + "s";
+    c.style.animationDelay = Math.random() * 1 + "s";
+    document.body.appendChild(c);
+    setTimeout(() => c.remove(), (dur + 1.2) * 1000);
+  }
 }
 
 /* ---------- lock countdown ---------- */
@@ -144,7 +207,7 @@ function setupGate() {
       msg.textContent = "";
       openSite(true);
     } else {
-      msg.textContent = "Hmm, not quite. Think of the day it all began ♥";
+      msg.textContent = "Hmm, not quite. Think of the day it all began \u{1F970}";
       form.classList.remove("shake");
       void form.offsetWidth;
       form.classList.add("shake");
@@ -159,21 +222,30 @@ function openSite(userGesture) {
   if (!built) { built = true; buildSite(); }
   startHearts();
   $("#music").classList.remove("hidden");
+  setTimeout(() => confetti(70), 300);
   if (userGesture) playMusic();
 }
 
 function buildSite() {
   $("#herName").textContent = CONFIG.herName;
   const age = new Date(CONFIG.unlockAt).getUTCFullYear() - CONFIG.birthYear;
-  $("#ageLine").textContent = "Today the world celebrates your " + ordinal(age) + " year, and I celebrate you.";
+  $("#ageLine").textContent = "Today the world celebrates your " + ordinal(age) + " year, and I celebrate you. \u{1F970}";
   $("#sinceText").textContent = CONFIG.togetherSince.toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
 
   buildGallery();
   buildCards();
   startTogetherCounter();
+  setupWish();
   setupLetter();
   setupFinale();
   setupReveal();
+
+  // tap anywhere for a little shower of hearts
+  document.addEventListener("click", (e) => {
+    if ($("#site").classList.contains("hidden")) return;
+    if (e.target.closest("button, input, figure, .lightbox, a")) return;
+    burstAt(e.clientX, e.clientY, 7, 80);
+  });
 }
 
 function startTogetherCounter() {
@@ -188,56 +260,138 @@ function startTogetherCounter() {
   setInterval(tick, 1000);
 }
 
+const isVideo = (src) => /\.(mp4|webm|mov|m4v)(\?.*)?$/i.test(src);
+let songWasPlaying = false;
+
+function openLightbox(m) {
+  const box = $("#lbMedia");
+  box.textContent = "";
+  let el;
+  if (isVideo(m.src)) {
+    el = document.createElement("video");
+    el.src = m.src;
+    el.controls = true;
+    el.autoplay = true;
+    el.playsInline = true;
+    el.setAttribute("playsinline", "");
+    // pause the song while a video plays, so the two don't overlap
+    const song = $("#song");
+    songWasPlaying = !song.paused;
+    if (songWasPlaying) { song.pause(); $("#music").classList.remove("playing"); }
+  } else {
+    el = document.createElement("img");
+    el.src = m.src;
+    el.alt = m.caption;
+  }
+  box.appendChild(el);
+  $("#lbCap").textContent = m.caption;
+  $("#lbMsg").textContent = m.message || "";
+  $("#lightbox").classList.remove("hidden");
+}
+
+function closeLightbox() {
+  const box = $("#lbMedia");
+  const v = box.querySelector("video");
+  if (v) v.pause();
+  box.textContent = "";
+  $("#lightbox").classList.add("hidden");
+  if (songWasPlaying) {
+    songWasPlaying = false;
+    $("#song").play().then(() => $("#music").classList.add("playing")).catch(() => {});
+  }
+}
+
 function buildGallery() {
   const gal = $("#gallery");
   const section = $("#story");
   const check = () => { if (!gal.children.length) section.classList.add("hidden"); };
-  PHOTOS.forEach((p) => {
+  MEMORIES.forEach((m) => {
     const fig = document.createElement("figure");
-    const img = document.createElement("img");
-    img.loading = "lazy";
-    img.alt = p.caption;
-    img.addEventListener("error", () => { fig.remove(); check(); });
-    img.src = p.src;
+    let media;
+    if (isVideo(m.src)) {
+      media = document.createElement("video");
+      media.muted = true;
+      media.playsInline = true;
+      media.setAttribute("playsinline", "");
+      media.preload = "metadata";
+      media.src = m.src + "#t=0.1"; // shows the first frame as the cover
+      fig.classList.add("is-video");
+    } else {
+      media = document.createElement("img");
+      media.loading = "lazy";
+      media.alt = m.caption;
+      media.src = m.src;
+    }
+    media.addEventListener("error", () => { fig.remove(); check(); });
+    fig.appendChild(media);
+    if (isVideo(m.src)) {
+      const play = document.createElement("span");
+      play.className = "play";
+      play.textContent = "▶";
+      fig.appendChild(play);
+    }
     const cap = document.createElement("figcaption");
-    cap.textContent = p.caption;
-    fig.append(img, cap);
-    fig.addEventListener("click", () => {
-      $("#lbImg").src = p.src;
-      $("#lbImg").alt = p.caption;
-      $("#lbCap").textContent = p.caption;
-      $("#lightbox").classList.remove("hidden");
-    });
+    cap.textContent = m.caption;
+    fig.appendChild(cap);
+    fig.addEventListener("click", () => openLightbox(m));
     gal.appendChild(fig);
   });
-  $("#lightbox").addEventListener("click", () => $("#lightbox").classList.add("hidden"));
+  $("#lightbox").addEventListener("click", (e) => {
+    if (e.target.id === "lightbox" || e.target.id === "lbClose") closeLightbox();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !$("#lightbox").classList.contains("hidden")) closeLightbox();
+  });
 }
 
 function buildCards() {
   const wrap = $("#cards");
-  REASONS.forEach((r, i) => {
+  REASONS.forEach((r) => {
     const card = document.createElement("button");
     card.type = "button";
     card.className = "card";
     card.innerHTML =
       '<div class="card-inner">' +
-      '<div class="face front"><span class="num"></span><span class="title"></span></div>' +
+      '<div class="face front"><span class="emo"></span><span class="title"></span></div>' +
       '<div class="face back"></div></div>';
-    card.querySelector(".num").textContent = "#" + (i + 1);
-    card.querySelector(".title").textContent = r[0];
-    card.querySelector(".back").textContent = r[1];
-    card.addEventListener("click", () => card.classList.toggle("flipped"));
+    card.querySelector(".emo").textContent = r[0];
+    card.querySelector(".title").textContent = r[1];
+    card.querySelector(".back").textContent = r[2];
+    card.addEventListener("click", () => {
+      card.classList.toggle("flipped");
+      const b = card.getBoundingClientRect();
+      if (card.classList.contains("flipped")) burstAt(b.left + b.width / 2, b.top + b.height / 2, 6, 70);
+    });
     wrap.appendChild(card);
+  });
+}
+
+/* ---------- birthday wish ---------- */
+function setupWish() {
+  const cake = $("#cake");
+  cake.addEventListener("click", () => {
+    if (cake.classList.contains("done")) return;
+    cake.classList.add("done");
+    $("#candles").textContent = "\u{1F4A8}";
+    $("#wishHint").classList.add("hidden");
+    const t = $("#wishText");
+    t.textContent = WISH_TEXT;
+    t.classList.remove("hidden");
+    const b = cake.getBoundingClientRect();
+    burstAt(b.left + b.width / 2, b.top + b.height / 2, 30, 200);
+    confetti(60);
   });
 }
 
 /* ---------- letter (typewriter) ---------- */
 function setupLetter() {
   const el = $("#letterText");
+  const full = LETTER + "\n\nForever yours \u{1F496}" + (CONFIG.fromName ? "\n" + CONFIG.fromName : "");
+  const chars = Array.from(full); // keeps emojis whole while typing
   let typer = null;
   const finish = () => {
     clearInterval(typer);
-    el.textContent = LETTER + (CONFIG.fromName ? "\n\nForever yours,\n" + CONFIG.fromName : "\n\nForever yours");
+    el.textContent = full;
     el.classList.remove("typing");
     $("#skipLetter").classList.add("hidden");
   };
@@ -249,9 +403,9 @@ function setupLetter() {
     let i = 0;
     typer = setInterval(() => {
       i += 1;
-      el.textContent = LETTER.slice(0, i);
-      if (i >= LETTER.length) finish();
-    }, 32);
+      el.textContent = chars.slice(0, i).join("");
+      if (i >= chars.length) finish();
+    }, 30);
   });
   $("#skipLetter").addEventListener("click", finish);
 }
@@ -260,25 +414,11 @@ function setupLetter() {
 function setupFinale() {
   $("#loveBtn").addEventListener("click", (e) => {
     const r = e.currentTarget.getBoundingClientRect();
-    const cx = r.left + r.width / 2;
-    const cy = r.top + r.height / 2;
-    for (let i = 0; i < 46; i++) {
-      const h = document.createElement("span");
-      h.className = "burst";
-      h.textContent = Math.random() > 0.5 ? "❤" : "♥";
-      h.style.left = cx + "px";
-      h.style.top = cy + "px";
-      h.style.color = Math.random() > 0.5 ? "#f0a6b8" : "#d96b8a";
-      h.style.fontSize = 14 + Math.random() * 22 + "px";
-      const a = Math.random() * Math.PI * 2;
-      const d = 90 + Math.random() * 190;
-      h.style.setProperty("--x", Math.cos(a) * d + "px");
-      h.style.setProperty("--y", Math.sin(a) * d + "px");
-      document.body.appendChild(h);
-      setTimeout(() => h.remove(), 1600);
-    }
+    burstAt(r.left + r.width / 2, r.top + r.height / 2, 50, 220);
+    confetti(80);
     $("#loveBtn").classList.add("hidden");
     $("#loveText").classList.remove("hidden");
+    $("#loveEmoji").classList.remove("hidden");
   });
 }
 

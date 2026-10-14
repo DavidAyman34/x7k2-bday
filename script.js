@@ -2,6 +2,7 @@
 
 /* =========================================================
    EDIT ME: everything personal lives in this block
+   (emojis are written as normal emojis, so just edit them)
    ========================================================= */
 const CONFIG = {
   herName: "Mokmok",
@@ -24,68 +25,77 @@ const CONFIG = {
 // Videos are detected by the file ending (.mp4, .webm, .mov, .m4v).
 // Any file that is missing is simply skipped, so you can list more than you upload.
 const MEMORIES = [
-  { src: "images/photo1.jpg", caption: "Where it all began \u{1F972}",
-    message: "The day everything started to make sense. I didn't know it yet, but you were already my whole world. \u{1F979}" },
-  { src: "images/photo2.jpg", caption: "My favorite smile \u{1F60D}",
-    message: "This smile fixes my worst days. I'd do anything to keep it on your face. \u{1F496}" },
-  { src: "images/photo3.jpg", caption: "Us, being us \u{1F495}",
-    message: "No filters, no acting, just us. This is my favorite version of life. \u{1F970}" },
+  { src: "images/photo1.jpg", caption: "Where it all began 🥹",
+    message: "The day everything started to make sense. I didn't know it yet, but you were already my whole world. ❤️" },
+  { src: "images/photo2.jpg", caption: "My favorite smile 😍",
+    message: "This smile fixes my worst days. I'd do anything to keep it on your face. ❤️" },
+  { src: "images/photo3.jpg", caption: "Us, being us ❤️",
+    message: "No filters, no acting, just us. This is my favorite version of life. 🥰" },
   { src: "images/photo4.jpg", caption: "Just another perfect day ✨",
-    message: "Any day is perfect when you're in it. Even the boring ones. \u{1F90D}" },
-  { src: "images/video1.mp4", caption: "Our little movie \u{1F3AC}",
-    message: "Press play and fall in love with us all over again. \u{1F49E}" },
-  { src: "images/photo5.jpg", caption: "You, always you \u{1F339}",
-    message: "I could look at this picture all day and still not get enough of you. \u{1F60D}" },
-  { src: "images/photo6.jpg", caption: "Home is wherever you are \u{1F3E1}",
-    message: "I finally understood what 'home' means when I met you. \u{1F90D}" },
-  { src: "images/video2.mp4", caption: "Replay this one \u{1F3A5}",
-    message: "Some moments deserve to be watched again and again. This is one of them. \u{1F970}" },
-  { src: "images/photo7.jpg", caption: "My heart, in one picture \u{1F496}",
-    message: "If you ever wonder where my heart is, it's right here, with you. \u{1F497}" },
-  { src: "images/photo8.jpg", caption: "And many more to come \u{1F970}",
-    message: "This is only the beginning. I have so many more memories I want to make with you. \u{1F496}" }
+    message: "Any day is perfect when you're in it. Even the boring ones. ❤️" },
+  { src: "images/video1.mp4", caption: "Our little movie 🎬",
+    message: "Press play and fall in love with us all over again. ❤️" },
+  { src: "images/photo5.jpg", caption: "You, always you 🌹",
+    message: "I could look at this picture all day and still not get enough of you. 😍" },
+  { src: "images/photo6.jpg", caption: "Home is wherever you are 🏡",
+    message: "I finally understood what 'home' means when I met you. ❤️" },
+  { src: "images/video2.mp4", caption: "Replay this one 🎥",
+    message: "Some moments deserve to be watched again and again. This is one of them. 🥰" },
+  { src: "images/photo7.jpg", caption: "My heart, in one picture ❤️",
+    message: "If you ever wonder where my heart is, it's right here, with you. ❤️" },
+  { src: "images/photo8.jpg", caption: "And many more to come 🥰",
+    message: "This is only the beginning. I have so many more memories I want to make with you. ∞❤️" }
 ];
 
 // [emoji, title, text on the back of the card]
 const REASONS = [
-  ["\u{1FAF6}", "You're always on my side", "Right or wrong, win or lose, I never have to wonder where you stand. You're my person. \u{1F90D}"],
-  ["\u{1F54A}️", "You never nag", "You give me space and trust, and somehow that makes me want to be better for you. \u{1F970}"],
-  ["☁️", "No drama. Ever.", "With you, everything ends in understanding. The peace lives where you are. \u{1F49E}"],
-  ["\u{1F496}", "Your big heart", "You give so generously and never keep score. I'm so lucky I get to be loved by you. \u{1F979}"],
-  ["\u{1F338}", "Your tenderness", "The way you care is quiet and constant, and it reaches me every single time. \u{1F90D}"],
-  ["\u{1F9F8}", "Your steadiness", "In a noisy world you stay calm and strong, and I lean on that more than you know. \u{1F917}"],
-  ["\u{1F52E}", "You understand me", "Half the time you get what I mean before I even find the words. How do you do that? \u{1F97A}"],
-  ["\u{1F512}", "Only you", "Out of everyone in the whole world, I'd choose you again. And again. And again. \u{1F498}"]
+  ["🫶", "You're always on my side", "Right or wrong, win or lose, I never have to wonder where you stand. You're my person. ❤️"],
+  ["😌", "You never nag", "You give me space and trust, and somehow that makes me want to be better for you. 🥰"],
+  ["🌹", "No drama. Ever.", "With you, everything ends in understanding. The peace lives where you are. ❤️"],
+  ["❤️", "Smart, kind and generous", "You give so much and never keep score. I'm so lucky I get to be loved by you. 🥹"],
+  ["🥰", "Your tenderness", "The way you care is quiet and constant, and it reaches me every single time. ❤️"],
+  ["🤗", "Your steadiness", "In a noisy world you stay calm and strong, and I lean on that more than you know. 🌹"],
+  ["🔮", "You understand me", "Half the time you get what I mean before I even find the words. How do you do that? 🥺"],
+  ["∞", "Only you", "Out of everyone in the whole world, I'd choose you again. And again. And again. ❤️"]
 ];
 
 const LETTER = [
-  "My Mokmok \u{1F90D}\u{1F339}",
+  "My Mokmok ❤️",
+  "(el basbosa bta3ty 🥰🥰)",
+  "w ro7 albi 😍😍😍",
+  "w nin 3eny men gowa 😘😍😍",
   "",
-  "Happy birthday, my love! \u{1F382}✨",
+  "Happy birthday, my love! 🎂❤️",
   "",
-  "Today is YOUR day, and honestly it's my favorite day of the whole year, because it's the day the world got you. \u{1F979}",
+  "Today is YOUR day, and you deserve the whole world on it. 🥹",
+  "But you know what my favorite day of the whole year really is? December 5th, the day I met you. That's the day my life really began. ❤️",
   "",
   "I tried so hard to find the perfect words for this letter, and I couldn't, because no words are big enough. So I'll just tell you the truth, straight from my heart:",
   "",
-  "I love you. \u{1F496} I love every little thing about you.",
-  "I love how big your heart is, how gentle you are, and how steady you stay when everything around us gets loud. \u{1F90D}",
-  "I love that you understand me even when I say nothing at all. \u{1F97A}",
+  "I love you. ❤️ I love every little thing about you.",
+  "You're smart, you're kind, you're so tender, and I never imagined I would have all this sweetness in my life. 🌹",
+  "I love how big your heart is, and how steady you stay when everything around us gets loud.",
+  "I love that you understand me even when I say nothing at all. 🥺",
   "",
-  "You are always on my side. Always. \u{1FAF6}",
-  "You never nag, you never pick fights, you never make me feel small. You are my peace, my calm, my safe place. \u{1F3E1}\u{1F497}",
+  "You are always on my side. Always. 🫶",
+  "You never nag, you never pick fights, you never make me feel small. You are my peace, my calm, my safe place. 🏡❤️",
   "Do you know how rare you are? I do. And I never take it for granted, not for a single day.",
   "",
-  "Ever since December 5th, even my most ordinary days turned into my favorites, just because you're in them. \u{1F319}☀️",
+  "Ever since December 5th, even my most ordinary days turned into my favorites, just because you're in them. 🌙☀️",
   "",
-  "And I want you to hear this clearly: I don't want anyone else in this world. Not now, not ever. \u{1F512}",
-  "It's you. It has always been you. Every morning, every storm, every boring Tuesday, I choose you. \u{1F49E}",
+  "I'm trying, and I will keep trying with everything I have, so that we stay together, and so that I get to see you always happy, always well, and in the best of everything. ❤️",
   "",
-  "My promise to you on your birthday: I'll keep choosing you, keep showing up, and keep trying to deserve the way you love me. \u{1F339}",
+  "And I want you to hear this clearly: I don't want anyone else in this world. Not now, not ever. 🔒",
+  "It's you. It has always been you. Every morning, every storm, every boring Tuesday, I choose you. ❤️",
   "",
-  "Happy birthday, my Mokmok. Thank you for being mine. \u{1F90D}\u{1F382}"
+  "My promise to you: I'll keep choosing you, keep showing up, and keep trying to deserve the way you love me. 🌹",
+  "",
+  "Happy birthday, my Mokmok. Thank you for being mine. ❤️🎂",
+  "",
+  "Love you endlessly ♾️❤️"
 ].join("\n");
 
-const WISH_TEXT = "Whatever you wished for, I'll do everything I can to make it come true. And me? I wished for you. Again. \u{1F970}";
+const WISH_TEXT = "Whatever you wished for, I'll do everything I can to make it come true. And me? I wished for you. Again. ❤️";
 
 /* =========================================================
    Code below: no need to touch
@@ -116,8 +126,8 @@ async function sha256(text) {
   return Array.from(new Uint8Array(buf)).map((b) => b.toString(16).padStart(2, "0")).join("");
 }
 
-/* ---------- floating hearts ---------- */
-const FLOATERS = ["♥", "\u{1F496}", "\u{1F497}", "✨", "\u{1F339}", "\u{1F495}", "\u{1F338}", "\u{1F90D}"];
+/* ---------- floating hearts (all red) ---------- */
+const FLOATERS = ["❤️", "∞", "🌹", "❤️", "∞", "❤️"];
 let heartsTimer = null;
 function startHearts() {
   if (heartsTimer) return;
@@ -138,7 +148,7 @@ function startHearts() {
 
 /* ---------- bursts and confetti ---------- */
 function burstAt(x, y, n, spread) {
-  const icons = ["❤️", "\u{1F496}", "\u{1F497}", "\u{1F495}", "✨"];
+  const icons = ["❤️", "❤️", "🌹", "∞", "❤️"];
   for (let i = 0; i < n; i++) {
     const h = document.createElement("span");
     h.className = "burst";
@@ -156,7 +166,7 @@ function burstAt(x, y, n, spread) {
 }
 
 function confetti(n) {
-  const pieces = ["\u{1F389}", "✨", "\u{1F496}", "\u{1F339}", "\u{1F388}", "\u{1F497}", "⭐", "\u{1F38A}"];
+  const pieces = ["🎉", "❤️", "🌹", "🎈", "❤️", "∞", "⭐", "🎊"];
   for (let i = 0; i < n; i++) {
     const c = document.createElement("span");
     c.className = "confetti";
@@ -207,7 +217,7 @@ function setupGate() {
       msg.textContent = "";
       openSite(true);
     } else {
-      msg.textContent = "Hmm, not quite. Think of the day it all began \u{1F970}";
+      msg.textContent = "Hmm, not quite. Think of the day it all began 🥰";
       form.classList.remove("shake");
       void form.offsetWidth;
       form.classList.add("shake");
@@ -229,7 +239,7 @@ function openSite(userGesture) {
 function buildSite() {
   $("#herName").textContent = CONFIG.herName;
   const age = new Date(CONFIG.unlockAt).getUTCFullYear() - CONFIG.birthYear;
-  $("#ageLine").textContent = "Today the world celebrates your " + ordinal(age) + " year, and I celebrate you. \u{1F970}";
+  $("#ageLine").textContent = "Today the world celebrates your " + ordinal(age) + " year, and I celebrate you. 🥰";
   $("#sinceText").textContent = CONFIG.togetherSince.toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
 
   buildGallery();
@@ -372,7 +382,7 @@ function setupWish() {
   cake.addEventListener("click", () => {
     if (cake.classList.contains("done")) return;
     cake.classList.add("done");
-    $("#candles").textContent = "\u{1F4A8}";
+    $("#candles").textContent = "💨";
     $("#wishHint").classList.add("hidden");
     const t = $("#wishText");
     t.textContent = WISH_TEXT;
@@ -386,7 +396,7 @@ function setupWish() {
 /* ---------- letter (typewriter) ---------- */
 function setupLetter() {
   const el = $("#letterText");
-  const full = LETTER + "\n\nForever yours \u{1F496}" + (CONFIG.fromName ? "\n" + CONFIG.fromName : "");
+  const full = LETTER + "\n\nForever yours ❤️" + (CONFIG.fromName ? "\n" + CONFIG.fromName : "");
   const chars = Array.from(full); // keeps emojis whole while typing
   let typer = null;
   const finish = () => {

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+  <meta name="theme-color" content="#17090f">
+  <title>For Mokmok</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="hearts" aria-hidden="true"></div>
+
+  <!-- 1. Locked until her birthday -->
+  <section id="lock" class="screen hidden">
+    <p class="eyebrow">Something is waiting for you</p>
+    <h1 class="script big">Not yet, Mokmok&hellip;</h1>
+    <div class="count" aria-live="off">
+      <div class="box"><span id="lcD">00</span><small>days</small></div>
+      <div class="box"><span id="lcH">00</span><small>hours</small></div>
+      <div class="box"><span id="lcM">00</span><small>min</small></div>
+      <div class="box"><span id="lcS">00</span><small>sec</small></div>
+    </div>
+    <p class="soft">Come back on your birthday &#9829;</p>
+  </section>
+
+  <!-- 2. Password gate -->
+  <section id="gate" class="screen hidden">
+    <p class="eyebrow">Just for you</p>
+    <h1 class="script big">One little secret first</h1>
+    <p class="soft">Enter the day our story began<br><small>(DDMMYYYY)</small></p>
+    <form id="gateForm" autocomplete="off">
+      <input id="pw" type="tel" inputmode="numeric" maxlength="12" placeholder="&bull; &bull; &bull; &bull; &bull; &bull; &bull; &bull;" aria-label="Secret date">
+      <button type="submit">Open &#9829;</button>
+    </form>
+    <p id="gateMsg" class="msg" role="alert"></p>
+  </section>
+
+  <!-- 3. The site -->
+  <main id="site" class="hidden">
+    <header class="hero screen">
+      <p class="eyebrow">November 8</p>
+      <h1 class="script huge">Happy Birthday,<br><span id="herName"></span></h1>
+      <p class="lead" id="ageLine"></p>
+      <a href="#together" class="scroll">scroll down &#8595;</a>
+    </header>
+
+    <section id="together" class="panel reveal">
+      <p class="eyebrow">Together since <span id="sinceText"></span></p>
+      <h2 class="serif">Every second with you counts</h2>
+      <div class="count" aria-live="off">
+        <div class="box"><span id="tgD">0</span><small>days</small></div>
+        <div class="box"><span id="tgH">00</span><small>hours</small></div>
+        <div class="box"><span id="tgM">00</span><small>min</small></div>
+        <div class="box"><span id="tgS">00</span><small>sec</small></div>
+      </div>
+    </section>
+
+    <section id="story" class="panel reveal">
+      <p class="eyebrow">Our story</p>
+      <h2 class="serif">Little moments, big love</h2>
+      <div id="gallery" class="gallery"></div>
+    </section>
+
+    <section id="reasons" class="panel reveal">
+      <p class="eyebrow">Tap a card</p>
+      <h2 class="serif">Why I love you</h2>
+      <div id="cards" class="cards"></div>
+    </section>
+
+    <section id="letter" class="panel reveal">
+      <p class="eyebrow">A letter from my heart</p>
+      <h2 class="serif">For you</h2>
+      <button id="openLetter" class="btn" type="button">Open my letter &#9993;</button>
+      <div id="letterBox" class="letter hidden">
+        <p id="letterText" class="letter-text"></p>
+        <button id="skipLetter" class="link hidden" type="button">skip the typing</button>
+      </div>
+    </section>
+
+    <section id="finale" class="panel reveal">
+      <p class="eyebrow">One last thing</p>
+      <button id="loveBtn" class="btn big-btn" type="button">Press me &#10084;</button>
+      <p id="loveText" class="script huge hidden">I love you, Monica</p>
+    </section>
+
+    <footer>Made with love, only for you.</footer>
+  </main>
+
+  <div id="lightbox" class="lightbox hidden" role="dialog" aria-label="Photo">
+    <img id="lbImg" alt="">
+    <p id="lbCap"></p>
+  </div>
+
+  <audio id="song" src="song.mp3" loop preload="none"></audio>
+  <button id="music" class="music hidden" type="button" aria-label="Play or pause music">&#9835;</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

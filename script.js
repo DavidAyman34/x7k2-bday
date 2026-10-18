@@ -8,8 +8,8 @@
 const CONFIG = {
   herName: "Mokmok",
   birthYear: 1998,
-  // Opens on Nov 8, 2026 at 00:00 Cairo time (UTC+2 in November)
-  unlockAt: Date.UTC(2026, 10, 7, 22, 0, 0),
+  // Victorville, CA = PST (UTC-8) on this date
+  unlockAt: Date.UTC(2026, 10, 8, 8, 0, 0),
   // Open https://your-site/?preview=mokmok to skip the countdown lock (for testing)
   previewKey: "mokmok"
 };
